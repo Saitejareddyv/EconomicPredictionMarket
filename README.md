@@ -15,47 +15,47 @@ To address this problem, we collected a comprehensive dataset comprising various
 ## Analytical Process
 
 ### Data Preparation
-• Loaded and cleaned the dataset, ensuring completeness and accuracy.
-• Standardized features to ensure consistency and improve model performance.
-• Split the data into training and testing sets to evaluate model performance effectively.
+• Loaded and cleaned the dataset, ensuring completeness and accuracy.<br>
+• Standardized features to ensure consistency and improve model performance.<br>
+• Split the data into training and testing sets to evaluate model performance effectively.<br>
 
 ### Exploratory Data Analysis (EDA)
-• Visualized relationships between different macroeconomic factors and interest rates using pair plots and correlation matrices.
-• Identified significant correlations and interactions that guided feature selection for modeling.
+• Visualized relationships between different macroeconomic factors and interest rates using pair plots and correlation matrices.<br>
+• Identified significant correlations and interactions that guided feature selection for modeling.<br>
 
 ### Machine Learning Models
-• Trained and evaluated two machine learning models: Linear Regression and Random Forest Regressor.
-• Assessed model performance using Mean Squared Error (MSE) and R-squared (R2) metrics.
-• Random Forest Regressor demonstrated superior performance, capturing complex relationships more effectively.
+• Trained and evaluated two machine learning models: Linear Regression and Random Forest Regressor.<br>
+• Assessed model performance using Mean Squared Error (MSE) and R-squared (R2) metrics.<br>
+• Random Forest Regressor demonstrated superior performance, capturing complex relationships more effectively.<br>
 
 ### Time Series Forecasting
-• Applied ARIMA models to predict future interest rates based on historical data.
-• Visualized and compared model predictions with historical interest rates to assess accuracy and trends.
+• Applied ARIMA models to predict future interest rates based on historical data.<br>
+• Visualized and compared model predictions with historical interest rates to assess accuracy and trends.<br>
 
 ### Sensitivity Analysis
-• Conducted sensitivity analysis to assess the impact of changes in different macroeconomic factors on interest rate predictions.
-• Varied each feature within a ±10% range while keeping others constant and visualized the impact on predictions.
-• Identified key factors such as GDP and unemployment that significantly influence interest rates.
+• Conducted sensitivity analysis to assess the impact of changes in different macroeconomic factors on interest rate predictions.<br>
+• Varied each feature within a ±10% range while keeping others constant and visualized the impact on predictions.<br>
+• Identified key factors such as GDP and unemployment that significantly influence interest rates.<br>
 
 ## Insights and Results
 
 ### Data Preparation:
-• Successfully loaded and cleaned the dataset.
-• Standardized features to improve model performance.
+• Successfully loaded and cleaned the dataset.<br>
+• Standardized features to improve model performance.<br>
 
 ### EDA:
-• Visualized relationships between macroeconomic factors and interest rates.
-• Identified significant correlations that guided feature selection.
+• Visualized relationships between macroeconomic factors and interest rates.<br>
+• Identified significant correlations that guided feature selection.<br>
 
 ### Machine Learning Models:
-• Random Forest Regressor outperformed Linear Regression, indicating superior ability to model complex relationships.
-• MSE for Linear Regression: 0.1510, R2: 0.9433
-• MSE for Random Forest: 0.0708, R2: 0.9734
+• Random Forest Regressor outperformed Linear Regression, indicating superior ability to model complex relationships.<br>
+• MSE for Linear Regression: 0.1510, R2: 0.9433<br>
+• MSE for Random Forest: 0.0708, R2: 0.9734<br>
 
 ### Time Series Forecasting:
-• ARIMA model provided reasonable forecasts for future interest rates.
-• Visual comparison showed predicted trends aligning well with historical data.
+• ARIMA model provided reasonable forecasts for future interest rates.<br>
+• Visual comparison showed predicted trends aligning well with historical data.<br>
 
 ### Sensitivity Analysis:
-• Visualized the impact of each macroeconomic factor on interest rate predictions.
-• Identified key factors such as GDP and unemployment with significant influence on interest rates.
+• Visualized the impact of each macroeconomic factor on interest rate predictions.<br>
+• Identified key factors such as GDP and unemployment with significant influence on interest rates.<br>
