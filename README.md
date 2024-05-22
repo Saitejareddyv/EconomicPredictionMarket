@@ -1,21 +1,61 @@
-# Prediction Market for macro-economic variable
-(Interest rate)
-## Overview.
-This macroeconomic analysis focuses on predicting the United Kingdom's interest rate using machine learning models such as Linear Regression and AdaBoost Regression. Additionally, time series forecasting methods including ARCH, GARCH, ARIMA, and SARIMA are applied. The dataset spans from 2007 to 2021 and encompasses key macroeconomic factors such as GDP, unemployment, weekly earnings, deposit rate, and yield. The aim is to determine the most accurate forecasting method and provide insights into the impact of interest rate changes on the economy and banking industry
-## Data-Gathering.
-Data was collected from sources such as FRED and the Bank of England, initially not in monthly format. We converted the data to monthly and addressed seasonality using an Excel pivot table, rendering it a suitable dataset. The target variable is the interest rate, alongside macroeconomic factors like gross domestic product, unemployment rate, yield, weekly earnings, and deposit rate.
-## Data-Cleaning.
-The dataset comprises 180 rows and 7 columns, incorporating various data types, including float. The date column is maintained in Datetime format using the data frame to_datetime transformation. Given the absence of null values, no null treatment is required during the data cleaning process.
-## Visulization of Data.
-In this comprehensive analysis, the exploratory data analysis (EDA) process was initiated to unravel patterns, anomalies, and relationships within the dataset encompassing 180 rows and 7 columns. The primary focus was on predicting the United Kingdom's interest rate, utilizing diverse methodologies such as linear regression, AdaBoost regression, and time series forecasting models including ARCH, GARCH, ARIMA, and SARIMAX.
+# Impact of Interest Rates on the Economy and Banking Industry: A Predictive and Forecasting Analysis using Machine Learning and Time Series Models
 
-EDA involved a correlation matrix, heatmap, and Principal Component Analysis (PCA) to discern relationships among variables. PCA revealed that Interest rate strongly correlated with PCA 1, offering insights into the underlying factors influencing interest rates.
+## Project Description
 
-Machine learning models, specifically linear regression and AdaBoost regression, were applied, with AdaBoost regression demonstrating superior accuracy at 97%. The Ordinary Least Square (OLS) regression method underscored the significant impact of GDP and deposit rate on interest rates.
+In this project, we delved into the intricate relationships between interest rates and various macroeconomic factors. Utilizing advanced data analysis, machine learning, and time series forecasting techniques, we aimed to predict interest rates and understand how changes in macroeconomic factors influence these rates. Our goal was to develop robust models and conduct sensitivity analysis to provide insights into the dynamics of the economy and the banking industry.
 
-Time series analysis using ARCH and GARCH models indicated their lack of statistical significance in predicting future interest rates. However, ARIMA modeling, after ensuring data stationarity, resulted in an optimal model order of (0,1,1), providing accurate predictions.
+## Problem Statement:
 
-SARIMAX, incorporating seasonality and exogenous factors, exhibited improved accuracy and revealed a downward trend in the forecasted interest rates from 2022 to 2026.
+Interest rates are a critical component of economic stability and growth. They influence borrowing, investment, and consumer spending. This project aimed to predict future interest rates and analyze the impact of various macroeconomic factors on these rates. By leveraging machine learning and time series models, we sought to uncover complex relationships and provide accurate predictions to inform economic policy and decision-making.
 
-## Summary.
-The AdaBoost regression model emerged as the most suitable for predicting interest rates among the machine learning algorithms. The combination of time series methods, including ARIMA and SARIMAX, enriched the forecasting capabilities, emphasizing the importance of considering various models for robust predictions in macroeconomic analyses. The SARIMAX model, in particular, forecasted a declining trend in interest rates for the upcoming years.
+## Data Collection
+
+To address this problem, we collected a comprehensive dataset comprising various macroeconomic indicators such as GDP, unemployment rate, weekly earnings, deposit rate, interest rate, and yield. This dataset enabled us to capture the diverse economic interactions and behaviors over time.
+
+## Analytical Process
+
+### Data Preparation
+• Loaded and cleaned the dataset, ensuring completeness and accuracy.
+• Standardized features to ensure consistency and improve model performance.
+• Split the data into training and testing sets to evaluate model performance effectively.
+
+### Exploratory Data Analysis (EDA)
+• Visualized relationships between different macroeconomic factors and interest rates using pair plots and correlation matrices.
+• Identified significant correlations and interactions that guided feature selection for modeling.
+
+### Machine Learning Models
+• Trained and evaluated two machine learning models: Linear Regression and Random Forest Regressor.
+• Assessed model performance using Mean Squared Error (MSE) and R-squared (R2) metrics.
+• Random Forest Regressor demonstrated superior performance, capturing complex relationships more effectively.
+
+### Time Series Forecasting
+• Applied ARIMA models to predict future interest rates based on historical data.
+• Visualized and compared model predictions with historical interest rates to assess accuracy and trends.
+
+### Sensitivity Analysis
+• Conducted sensitivity analysis to assess the impact of changes in different macroeconomic factors on interest rate predictions.
+• Varied each feature within a ±10% range while keeping others constant and visualized the impact on predictions.
+• Identified key factors such as GDP and unemployment that significantly influence interest rates.
+
+## Insights and Results
+
+### Data Preparation:
+• Successfully loaded and cleaned the dataset.
+• Standardized features to improve model performance.
+
+### EDA:
+• Visualized relationships between macroeconomic factors and interest rates.
+• Identified significant correlations that guided feature selection.
+
+### Machine Learning Models:
+• Random Forest Regressor outperformed Linear Regression, indicating superior ability to model complex relationships.
+• MSE for Linear Regression: 0.1510, R2: 0.9433
+• MSE for Random Forest: 0.0708, R2: 0.9734
+
+### Time Series Forecasting:
+• ARIMA model provided reasonable forecasts for future interest rates.
+• Visual comparison showed predicted trends aligning well with historical data.
+
+### Sensitivity Analysis:
+• Visualized the impact of each macroeconomic factor on interest rate predictions.
+• Identified key factors such as GDP and unemployment with significant influence on interest rates.
