@@ -59,3 +59,8 @@ To address this problem, we collected a comprehensive dataset comprising various
 ### Sensitivity Analysis:
 • Visualized the impact of each macroeconomic factor on interest rate predictions.<br>
 • Identified key factors such as GDP and unemployment with significant influence on interest rates.<br>
+
+## Key Takeaways:
+• Random Forest Regressor outperformed Linear Regression, making it a better choice for predicting interest rates in this context.<br>
+• ARIMA model provided valuable insights into future trends of interest rates.<br>
+• Sensitivity Analysis revealed that GDP and unemployment rates significantly influence interest rates, highlighting areas for targeted economic policy intervention.<br>
